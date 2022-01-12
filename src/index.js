@@ -3,4 +3,5 @@ module.exports = function toReadable (number) {
   let decimal = ['zero', 'ten', 'twenty', 'trirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety', 'hundred', 'thousand'];        
   if (number <= 20) {
       return numbersTo20[number];
+  }
 }
