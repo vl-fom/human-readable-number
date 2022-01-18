@@ -4,7 +4,7 @@ module.exports = function toReadable (number) {
   if (number <= 20) {
         return numbersTo20[number];
   } else if ((number < 100) && (number % 10 == 0)) {
-        return decimal[Math.floor(number / 10) + 1];
+        return decimal[Math.floor(number / 10)];
   }  else if (number < 100) {
         return (decimal[Math.floor(number / 10)] + ' ' + numbersTo20[number % 10]);
   } else if (number % 100 === 0){
